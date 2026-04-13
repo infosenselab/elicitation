@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elicitation"
+version = "1.0.0"
+description = "Tools for elicitation dialogue."
+authors = [
+    { name = "De Lima, Victor" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["elicitation", "llms", "conversational-agents"]
+dependencies = [
+    "numpy",
+    "pandas",
+    "sentence-transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["elicitation*"]
+exclude = ["examples*"]
+
+[project.urls]
+Homepage = "https://github.com/infosenselab/elicitation"
+Repository = "https://github.com/infosenselab/elicitation"
