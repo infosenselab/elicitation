@@ -1,5 +1,9 @@
 # Elicitation
 
+
+[![PyPI version](https://badge.fury.io/py/elicitation.svg)](https://pypi.org/project/elicitation/)
+
+
 Elicitation is a Python package for training and evaluating Information Elicitation Agents (IEAs), based on the paper `YIELD: A Large-Scale Dataset and Evaluation Framework for Information Elicitation Agents`, presented at ACL 2026.
 
 IEAs are conversational agents designed to actively elicit information from users, rather than passively respond to requests.
@@ -108,4 +112,20 @@ from elicitation.metrics import progression, turn_length_ratio
 
 progression_df = progression(dialogues, embedding_model, k=2, gamma=0.9)
 tlr_df = turn_length_ratio(dialogues)
+```
+
+
+## Citing Elicitation
+
+If you use this resource in your projects, please cite the following paper.
+
+
+```bibtex
+@misc{De_Lima_YIELD_A_Large-Scale_2026,
+author = {De Lima, Victor and Yang, Grace Hui},
+doi = {10.48550/arXiv.2604.10968},
+title = {{YIELD: A Large-Scale Dataset and Evaluation Framework for Information Elicitation Agents}},
+url = {https://arxiv.org/abs/2604.10968},
+year = {2026}
+}
 ```
